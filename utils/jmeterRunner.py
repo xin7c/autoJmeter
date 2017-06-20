@@ -7,9 +7,13 @@
 @file: jmeterRunner.py
 @time: 2017/6/20 上午10:03
 """
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '..'))
 import subprocess
 import time
 import config_global as cg
+
 
 
 class Action(object):
