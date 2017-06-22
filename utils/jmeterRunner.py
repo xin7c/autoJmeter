@@ -85,4 +85,4 @@ if __name__ == "__main__":
     a = Action()
     # print(a.logger_time())
     a.runJmeter(jmx_path=a.jmx("dafei001.jmx"),
-                var=a.j_var(cg.vars))
+                var=a.j_var(cg.j_Vars) + a.d_var(cg.d_Vars))
