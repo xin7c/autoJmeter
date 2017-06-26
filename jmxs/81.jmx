@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="测试计划" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">172.16.1.82</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">8142</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="path" elementType="Argument">
+            <stringProp name="Argument.name">path</stringProp>
+            <stringProp name="Argument.value">b2b-front</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="channel" elementType="Argument">
+            <stringProp name="Argument.name">channel</stringProp>
+            <stringProp name="Argument.value">channel/channel</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_imagedown" elementType="Argument">
+            <stringProp name="Argument.name">txncd_imagedown</stringProp>
+            <stringProp name="Argument.value">imageDaDownloads</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="prodSubNo" elementType="Argument">
+            <stringProp name="Argument.name">prodSubNo</stringProp>
+            <stringProp name="Argument.value">500001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mercNo" elementType="Argument">
+            <stringProp name="Argument.name">mercNo</stringProp>
+            <stringProp name="Argument.value">12345678901234567890123456789012</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mercName" elementType="Argument">
+            <stringProp name="Argument.name">mercName</stringProp>
+            <stringProp name="Argument.value">12345678901234567890123456789012</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="idType" elementType="Argument">
+            <stringProp name="Argument.name">idType</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="transAmt" elementType="Argument">
+            <stringProp name="Argument.name">transAmt</stringProp>
+            <stringProp name="Argument.value">40000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oldtransAmt" elementType="Argument">
+            <stringProp name="Argument.name">oldtransAmt</stringProp>
+            <stringProp name="Argument.value">20000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="totalCnt" elementType="Argument">
+            <stringProp name="Argument.name">totalCnt</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="gender" elementType="Argument">
+            <stringProp name="Argument.name">gender</stringProp>
+            <stringProp name="Argument.value">M</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_sms" elementType="Argument">
+            <stringProp name="Argument.name">txncd_sms</stringProp>
+            <stringProp name="Argument.value">BYXY0012</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="bankCardType" elementType="Argument">
+            <stringProp name="Argument.name">bankCardType</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_transsearch" elementType="Argument">
+            <stringProp name="Argument.name">txncd_transsearch</stringProp>
+            <stringProp name="Argument.value">tradeRestQuerys</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_loanapply" elementType="Argument">
+            <stringProp name="Argument.name">txncd_loanapply</stringProp>
+            <stringProp name="Argument.value">loanApplicans</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="callbackUrl" elementType="Argument">
+            <stringProp name="Argument.name">callbackUrl</stringProp>
+            <stringProp name="Argument.value">http://223.223.203.240:8142/b2b-front/notify/notice</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="marrStatus" elementType="Argument">
+            <stringProp name="Argument.name">marrStatus</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="eduDegree" elementType="Argument">
+            <stringProp name="Argument.name">eduDegree</stringProp>
+            <stringProp name="Argument.value">本科</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="addrDetail" elementType="Argument">
+            <stringProp name="Argument.name">addrDetail</stringProp>
+            <stringProp name="Argument.value">北辰世纪中心A座</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="repayInterval" elementType="Argument">
+            <stringProp name="Argument.name">repayInterval</stringProp>
+            <stringProp name="Argument.value">02</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="interRateModel" elementType="Argument">
+            <stringProp name="Argument.name">interRateModel</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="interRateAdMod" elementType="Argument">
+            <stringProp name="Argument.name">interRateAdMod</stringProp>
+            <stringProp name="Argument.value">02</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="repayMethod" elementType="Argument">
+            <stringProp name="Argument.name">repayMethod</stringProp>
+            <stringProp name="Argument.value">06</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="firstPayDate" elementType="Argument">
+            <stringProp name="Argument.name">firstPayDate</stringProp>
+            <stringProp name="Argument.value">20170516</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="interestRate" elementType="Argument">
+            <stringProp name="Argument.name">interestRate</stringProp>
+            <stringProp name="Argument.value">0.09</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="relation" elementType="Argument">
+            <stringProp name="Argument.name">relation</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="comyName" elementType="Argument">
+            <stringProp name="Argument.name">comyName</stringProp>
+            <stringProp name="Argument.value">龙翻海平</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="monthIncome" elementType="Argument">
+            <stringProp name="Argument.name">monthIncome</stringProp>
+            <stringProp name="Argument.value">10000.00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="comyNature" elementType="Argument">
+            <stringProp name="Argument.name">comyNature</stringProp>
+            <stringProp name="Argument.value">05</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="comyAdd" elementType="Argument">
+            <stringProp name="Argument.name">comyAdd</stringProp>
+            <stringProp name="Argument.value">海底水晶龙宫</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spouserelation" elementType="Argument">
+            <stringProp name="Argument.name">spouserelation</stringProp>
+            <stringProp name="Argument.value">02</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spousecomyName" elementType="Argument">
+            <stringProp name="Argument.name">spousecomyName</stringProp>
+            <stringProp name="Argument.value">未知</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spousemonthIncome" elementType="Argument">
+            <stringProp name="Argument.name">spousemonthIncome</stringProp>
+            <stringProp name="Argument.value">10000.00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spousecomyNature" elementType="Argument">
+            <stringProp name="Argument.name">spousecomyNature</stringProp>
+            <stringProp name="Argument.value">03</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spousecomyAdd" elementType="Argument">
+            <stringProp name="Argument.name">spousecomyAdd</stringProp>
+            <stringProp name="Argument.value">天宫月宫桂花树下</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spouseName" elementType="Argument">
+            <stringProp name="Argument.name">spouseName</stringProp>
+            <stringProp name="Argument.value">未知</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="spousemobNo" elementType="Argument">
+            <stringProp name="Argument.name">spousemobNo</stringProp>
+            <stringProp name="Argument.value">18501187655</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="contactsRelations" elementType="Argument">
+            <stringProp name="Argument.name">contactsRelations</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="contactsName" elementType="Argument">
+            <stringProp name="Argument.name">contactsName</stringProp>
+            <stringProp name="Argument.value">龙宫首席弟子烩肉</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="contactsMobile" elementType="Argument">
+            <stringProp name="Argument.name">contactsMobile</stringProp>
+            <stringProp name="Argument.value">15566728899</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl06" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl06</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/hetong/zhengda_baoyin.pdf</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType06" elementType="Argument">
+            <stringProp name="Argument.name">imageType06</stringProp>
+            <stringProp name="Argument.value">06</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl08" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl08</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/hetong/zhengda_baoyin.pdf</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType08" elementType="Argument">
+            <stringProp name="Argument.name">imageType08</stringProp>
+            <stringProp name="Argument.value">08</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_portrepay" elementType="Argument">
+            <stringProp name="Argument.name">txncd_portrepay</stringProp>
+            <stringProp name="Argument.value">repayApplicans</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl01" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl01</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201702/20170224/b314371ea7f546a9aebb6de53a364ddc.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType01" elementType="Argument">
+            <stringProp name="Argument.name">imageType01</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl02" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl02</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201702/20170224/b314371ea7f546a9aebb6de53a364ddc.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType02" elementType="Argument">
+            <stringProp name="Argument.name">imageType02</stringProp>
+            <stringProp name="Argument.value">02</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl03" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl03</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201702/20170224/b314371ea7f546a9aebb6de53a364ddc.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType03" elementType="Argument">
+            <stringProp name="Argument.name">imageType03</stringProp>
+            <stringProp name="Argument.value">03</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl04" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl04</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/hetong/zhengda_baoyin.pdf</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType04" elementType="Argument">
+            <stringProp name="Argument.name">imageType04</stringProp>
+            <stringProp name="Argument.value">04</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl05" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl05</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType05" elementType="Argument">
+            <stringProp name="Argument.name">imageType05</stringProp>
+            <stringProp name="Argument.value">05</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl07" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl07</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType07" elementType="Argument">
+            <stringProp name="Argument.name">imageType07</stringProp>
+            <stringProp name="Argument.value">07</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_repayport" elementType="Argument">
+            <stringProp name="Argument.name">txncd_repayport</stringProp>
+            <stringProp name="Argument.value">repayApplicans</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="txncd_sync" elementType="Argument">
+            <stringProp name="Argument.name">txncd_sync</stringProp>
+            <stringProp name="Argument.value">chanTraResultSyncs</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="busNumber" elementType="Argument">
+            <stringProp name="Argument.name">busNumber</stringProp>
+            <stringProp name="Argument.value">C521706100002520049</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="orderNo" elementType="Argument">
+            <stringProp name="Argument.name">orderNo</stringProp>
+            <stringProp name="Argument.value">C021705250002470002</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="custName" elementType="Argument">
+            <stringProp name="Argument.name">custName</stringProp>
+            <stringProp name="Argument.value">鲍阿勇</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="idNo" elementType="Argument">
+            <stringProp name="Argument.name">idNo</stringProp>
+            <stringProp name="Argument.value">150402198412060311</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mobNo" elementType="Argument">
+            <stringProp name="Argument.name">mobNo</stringProp>
+            <stringProp name="Argument.value">18618180476</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="bankCardNo" elementType="Argument">
+            <stringProp name="Argument.name">bankCardNo</stringProp>
+            <stringProp name="Argument.value">6212260200081911006</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mobileNo" elementType="Argument">
+            <stringProp name="Argument.name">mobileNo</stringProp>
+            <stringProp name="Argument.value">18618180476</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="shtMessVerCd" elementType="Argument">
+            <stringProp name="Argument.name">shtMessVerCd</stringProp>
+            <stringProp name="Argument.value">81149</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl13" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl13</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl00" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl00</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType13" elementType="Argument">
+            <stringProp name="Argument.name">imageType13</stringProp>
+            <stringProp name="Argument.value">13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType00" elementType="Argument">
+            <stringProp name="Argument.name">imageType00</stringProp>
+            <stringProp name="Argument.value">00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="businessNature" elementType="Argument">
+            <stringProp name="Argument.name">businessNature</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="needret" elementType="Argument">
+            <stringProp name="Argument.name">needret</stringProp>
+            <stringProp name="Argument.value">yes</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="version" elementType="Argument">
+            <stringProp name="Argument.name">version</stringProp>
+            <stringProp name="Argument.value">V1_1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="queryCreditFlag" elementType="Argument">
+            <stringProp name="Argument.name">queryCreditFlag</stringProp>
+            <stringProp name="Argument.value">Y</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl09" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl09</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType09" elementType="Argument">
+            <stringProp name="Argument.name">imageType09</stringProp>
+            <stringProp name="Argument.value">09</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="busType_loanapply" elementType="Argument">
+            <stringProp name="Argument.name">busType_loanapply</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType" elementType="Argument">
+            <stringProp name="Argument.name">imageType</stringProp>
+            <stringProp name="Argument.value">01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="scheduleInterest" elementType="Argument">
+            <stringProp name="Argument.name">scheduleInterest</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="schedulePrincipal" elementType="Argument">
+            <stringProp name="Argument.name">schedulePrincipal</stringProp>
+            <stringProp name="Argument.value">18000.00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="scheduleTotal" elementType="Argument">
+            <stringProp name="Argument.name">scheduleTotal</stringProp>
+            <stringProp name="Argument.value">18000.00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="trantype" elementType="Argument">
+            <stringProp name="Argument.name">trantype</stringProp>
+            <stringProp name="Argument.value">03</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="busType_repayapply" elementType="Argument">
+            <stringProp name="Argument.name">busType_repayapply</stringProp>
+            <stringProp name="Argument.value">02</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="seriNo_repay" elementType="Argument">
+            <stringProp name="Argument.name">seriNo_repay</stringProp>
+            <stringProp name="Argument.value">1493133094213</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="resultCode" elementType="Argument">
+            <stringProp name="Argument.name">resultCode</stringProp>
+            <stringProp name="Argument.value">0000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="thirdPaySerNum" elementType="Argument">
+            <stringProp name="Argument.name">thirdPaySerNum</stringProp>
+            <stringProp name="Argument.value">味蕾卫雷</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="phoneName" elementType="Argument">
+            <stringProp name="Argument.name">phoneName</stringProp>
+            <stringProp name="Argument.value">乾胜</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="phonemobNo" elementType="Argument">
+            <stringProp name="Argument.name">phonemobNo</stringProp>
+            <stringProp name="Argument.value">13561178911</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="seriNo" elementType="Argument">
+            <stringProp name="Argument.name">seriNo</stringProp>
+            <stringProp name="Argument.value">1493368516805</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="period" elementType="Argument">
+            <stringProp name="Argument.name">period</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="trantype_clear" elementType="Argument">
+            <stringProp name="Argument.name">trantype_clear</stringProp>
+            <stringProp name="Argument.value">04</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl11" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl11</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType11" elementType="Argument">
+            <stringProp name="Argument.name">imageType11</stringProp>
+            <stringProp name="Argument.value">11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageUrl12" elementType="Argument">
+            <stringProp name="Argument.name">imageUrl12</stringProp>
+            <stringProp name="Argument.value">http://172.16.1.82/bsmedia/201701/20170103/b91e948639634f7eb36e2e8b24fdc4a2.png</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="imageType12" elementType="Argument">
+            <stringProp name="Argument.name">imageType12</stringProp>
+            <stringProp name="Argument.value">12</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="repayDate" elementType="Argument">
+            <stringProp name="Argument.name">repayDate</stringProp>
+            <stringProp name="Argument.value">20170525</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="repayTime" elementType="Argument">
+            <stringProp name="Argument.name">repayTime</stringProp>
+            <stringProp name="Argument.value">001000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1492088192000</longProp>
+        <longProp name="ThreadGroup.end_time">1492088192000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="仅一次控制器" enabled="true"/>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import com.zhongan.clare.util.*;
+import org.apache.jmeter.protocol.http.sampler.*;
+import org.apache.jmeter.samplers.*;
+import org.apache.jmeter.config.*;   
+import org.apache.jmeter.protocol.http.sampler.*;
+import org.apache.jmeter.protocol.http.util.*; 
+
+import CommPO;
+import RequestData;
+import KeyUtil.KeyUtil;
+import MD5;
+
+try{
+
+	Arguments arguments =  sampler.getArguments();
+	Argument arg = arguments.getArgument(0);
+	String body = arg.getValue();
+
+	log.info(&quot;PreProcessor===========================================&quot;+ body);
+
+	JSONObject parseObject = JSON.parseObject(body);
+
+	log.info(&quot;====********************************************************************&quot;+ 		parseObject);
+
+	RequestData r = new RequestData();
+	String data = parseObject.getString(&quot;data&quot;);
+	CommPO commPO = parseObject.getObject(&quot;comm&quot;,CommPO.class);
+	commPO.setSigntx(MD5.digest(data+&quot;|&quot;+&quot;123458&quot;));
+	r.setData(KeyUtil.encryptAES(data,&quot;1234567890123458&quot;));
+	r.setComm(commPO);
+	String params2 = JSONObject.toJSONString(r);
+	arg.setValue(params2);
+	}
+catch (Exception ex) {
+		
+    log.info(&quot;Script execution failed================PostProcessor=========================&quot;, ex);
+   }
+
+</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import com.zhongan.clare.util.*;
+
+import CommPOdafei;
+import RequestData;
+import KeyUtil.KeyUtil;
+import MD5;
+
+    
+ 
+try {
+
+	    
+
+	  //对返回的json数据处理
+	  String response_data = prev.getResponseDataAsString();
+       JSONObject parseObject = JSON.parseObject(response_data);
+       log.info(&quot;====********************************************************************&quot;+ parseObject);
+
+       //这是加密的数据处理 
+
+       log.info(&quot;====PostProcessor********************************************************************&quot;+ data);
+       //解密
+       String data = JSON.toJSONString(parseObject.get(&quot;data&quot;));
+	  String reqDencryptJSON = KeyUtil.decryptAES(data,&quot;1234567890123458&quot;);
+
+ 	  log.info(&quot;===PostProcessor**********************************responseBody*****************************&quot;+ reqDencryptJSON);
+ 		 
+               //解密的数据写回返回body中
+       prev.setResponseData(reqDencryptJSON.getBytes(&quot;UTF-8&quot;));
+        }
+	
+
+catch (Exception ex) {
+		
+    	  log.info(&quot;Script execution failed================PostProcessor=========================&quot;, ex);
+   }</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款申请（50000）" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_loanapply}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;prodSubNo&quot;: &quot;${prodSubNo}&quot;,&#xd;
+&quot;mercNo&quot;: &quot;${mercNo}&quot;,&#xd;
+&quot;mercName&quot;: &quot;${mercName}&quot;,&#xd;
+&quot;custName&quot;: &quot;${custName}&quot;,&#xd;
+&quot;idType&quot;: &quot;${idType}&quot;,&#xd;
+&quot;idNo&quot;: &quot;${idNo}&quot;,&#xd;
+&quot;mobNo&quot;: &quot;${mobNo}&quot;,&#xd;
+&quot;callbackUrl&quot;: &quot;${callbackUrl}&quot;,&#xd;
+&quot;gender&quot;: &quot;${gender}&quot;,&#xd;
+&quot;marrStatus&quot;: &quot;${marrStatus}&quot;,&#xd;
+&quot;eduDegree&quot;: &quot;${eduDegree}&quot;,&#xd;
+&quot;queryCreditFlag&quot;:&quot;${queryCreditFlag}&quot;,&#xd;
+&quot;addrDetail&quot;: &quot;${addrDetail}&quot;,&#xd;
+&quot;loanInfo&quot;: {&#xd;
+	&quot;repayInterval&quot;: &quot;${repayInterval}&quot;,&#xd;
+	&quot;interRateModel&quot;: &quot;${interRateModel}&quot;,&#xd;
+	&quot;transAmt&quot;: ${transAmt},&#xd;
+	&quot;totalCnt&quot;: ${totalCnt},&#xd;
+	&quot;repayMethod&quot;: &quot;${repayMethod}&quot;,&#xd;
+	&quot;firstPayDate&quot;: ${firstPayDate},&#xd;
+	&quot;interestRate&quot;: ${interestRate},&#xd;
+	&quot;loanUse&quot;:&quot;03&quot;,&#xd;
+	},&#xd;
+&quot;companyInfo&quot;: [&#xd;
+	{&#xd;
+	&quot;relation&quot;: &quot;${relation}&quot;,&#xd;
+	&quot;comyName&quot;: &quot;${comyName}&quot;,&#xd;
+	&quot;monthIncome&quot;: ${monthIncome},&#xd;
+	&quot;comyNature&quot;: &quot;${comyNature}&quot;,&#xd;
+	&quot;comyAdd&quot;: &quot;${comyAdd}&quot;,&#xd;
+	&quot;businessNature&quot;:&quot;${businessNature}&quot;,&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;relation&quot;: &quot;${spouserelation}&quot;,&#xd;
+	&quot;comyName&quot;: &quot;${spousecomyName}&quot;,&#xd;
+	&quot;monthIncome&quot;: ${spousemonthIncome},&#xd;
+	&quot;comyNature&quot;: &quot;${spousecomyNature}&quot;,&#xd;
+	&quot;comyAdd&quot;: &quot;${spousecomyAdd}&quot;,&#xd;
+	&quot;businessNature&quot;:&quot;${businessNature}&quot;,&#xd;
+	},&#xd;
+],&#xd;
+&quot;spouseInfo&quot;: {&#xd;
+	&quot;spouseName&quot;: &quot;${spouseName}&quot;,&#xd;
+	&quot;mobNo&quot;: &quot;${spousemobNo}&quot;,&#xd;
+	},&#xd;
+&quot;agentCustBankcardAuthInfo&quot;: {&#xd;
+	&quot;bankCardNo&quot;: &quot;${bankCardNo}&quot;,&#xd;
+	&quot;bankCardType&quot;: &quot;${bankCardType}&quot;,&#xd;
+	&quot;custName&quot;: &quot;${custName}&quot;,&#xd;
+	&quot;idType&quot;: &quot;${idType}&quot;,&#xd;
+	&quot;idNo&quot;: &quot;${idNo}&quot;,&#xd;
+	&quot;mobileNo&quot;: &quot;${mobileNo}&quot;,&#xd;
+	},&#xd;
+&quot;imgNameList&quot;: [&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl01}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType01}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl04}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType04}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl09}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType09}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl06}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType06}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl08}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType08}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl13}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType13}&quot;&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;imageUrl&quot;: &quot;${imageUrl00}&quot;,	&#xd;
+	&quot;imageType&quot;: &quot;${imageType00}&quot;&#xd;
+	},&#xd;
+&#xd;
+],&#xd;
+&quot;phoneDirectorys&quot;:[&#xd;
+{&#xd;
+&quot;name&quot;:&quot;${phoneName}&quot;,&#xd;
+&quot;mobNo&quot;:&quot;${phonemobNo}&quot;&#xd;
+},&#xd;
+],&#xd;
+&quot;chanlRiskinfo&quot;: [&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_appDate&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS)}&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_houseProperty&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;自有房&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_homeAddress&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;山西省永济市卿头镇卿头街12号&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_monthlyExpenses&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;12000.00&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_appEquipment&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;862689032716182&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_appGpsLong&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;121.579116&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_appGpsLat&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;38.950627&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_firstUTline&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;18000.00&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_firstUTdate&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS)}&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_loanEquipment&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;862689032716182&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_loanGpsLong&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;121.579116&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_loanGpsLat&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;38.950627&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_firstLoanDate&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS)}&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_loanAmt&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;10000.00&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_loanBal&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;8000.00&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_currLine&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;10000.00&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_lastOverDueMonths&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;-9999&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_lastOverDuePrincipal&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;0&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_lastOverDueInterest&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;0&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_mostOverDuedays&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;0&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_overDueTimes&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;0&quot;,	&#xd;
+	},&#xd;
+	{&#xd;
+	&quot;riskCode&quot;: &quot;df_departCity&quot;,&#xd;
+	&quot;riskCodeValue&quot;: &quot;南京&quot;,	&#xd;
+	},&#xd;
+],&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款结果查询（busNumber)" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_transsearch}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;busNumber&quot;: &quot;${busNumber}&quot;,&#xd;
+&quot;busType&quot;: &quot;${busType_loanapply}&quot;,}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="借款结果查询（orderNo)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_transsearch}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;ordrNo&quot;: &quot;${seriNo}&quot;,&#xd;
+&quot;busType&quot;: &quot;${busType_loanapply}&quot;,}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="合同下载" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_imagedown}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;ordrNo&quot;: &quot;${ordrNo}&quot;,&#xd;
+&quot;imageType&quot;: &quot;${imageType}&quot;,&#xd;
+&quot;prodSubNo&quot;:&quot;${prodSubNo}&quot;&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款申请(部分提前还款)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_repayport}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;idNo&quot;: &quot;${idNo}&quot;,&#xd;
+&quot;idType&quot;: &quot;${idType}&quot;,&#xd;
+&quot;custName&quot;:&quot;${custName}&quot;,&#xd;
+&quot;mobNo&quot;:&quot;${mobNo}&quot;,&#xd;
+&quot;trantype&quot;:&quot;${trantype}&quot;,&#xd;
+&quot;callbackUrl&quot;:&quot;${callbackUrl}&quot;,&#xd;
+&quot;repayDate&quot;:&quot;${repayDate}&quot;,&#xd;
+&quot;repayTime&quot;:&quot;${repayTime}&quot;,&#xd;
+&quot;payList&quot;:[{&#xd;
+&quot;orderNo&quot;:&quot;${orderNo}&quot;,&#xd;
+&quot;period&quot;:&quot;${period}&quot;,&#xd;
+&quot;scheduleInterest&quot;:&quot;${scheduleInterest}&quot;,&#xd;
+&quot;schedulePrincipal&quot;:&quot;${schedulePrincipal}&quot;,&#xd;
+&quot;scheduleTotal&quot;:&quot;${scheduleTotal}&quot;}&#xd;
+]&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">busNumber</stringProp>
+              <stringProp name="RegexExtractor.regex">busNumber&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款申请(部分提前还款)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_repayport}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;idNo&quot;: &quot;${idNo}&quot;,&#xd;
+&quot;idType&quot;: &quot;${idType}&quot;,&#xd;
+&quot;custName&quot;:&quot;${custName}&quot;,&#xd;
+&quot;mobNo&quot;:&quot;${mobNo}&quot;,&#xd;
+&quot;trantype&quot;:&quot;${trantype_clear}&quot;,&#xd;
+&quot;callbackUrl&quot;:&quot;${callbackUrl}&quot;,&#xd;
+&quot;repayDate&quot;:&quot;${repayDate}&quot;,&#xd;
+&quot;repayTime&quot;:&quot;${repayTime}&quot;,&#xd;
+&quot;payList&quot;:[{&#xd;
+&quot;orderNo&quot;:&quot;${orderNo}&quot;,&#xd;
+&quot;period&quot;:&quot;${period}&quot;,&#xd;
+&quot;scheduleInterest&quot;:&quot;${scheduleInterest}&quot;,&#xd;
+&quot;schedulePrincipal&quot;:&quot;${schedulePrincipal}&quot;,&#xd;
+&quot;scheduleTotal&quot;:&quot;${scheduleTotal}&quot;}&#xd;
+]&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">busNumber</stringProp>
+              <stringProp name="RegexExtractor.regex">busNumber&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="交易结果同步（busNumber)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_sync}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;busNumber&quot;: &quot;${busNumber}&quot;,&#xd;
+&quot;resultCode&quot;:&quot;${resultCode}&quot;,&#xd;
+&quot;resultMsg&quot;:&quot;成功&quot;,&#xd;
+&quot;thirdPaySerNum&quot;:&quot;${thirdPaySerNum}&quot;,&#xd;
+&quot;trantype&quot;:&quot;${trantype}&quot;,&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="交易结果同步（orderNo)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_sync}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;ordrNo&quot;: &quot;${seriNo_repay}&quot;,&#xd;
+&quot;resultCode&quot;:&quot;${resultCode}&quot;,&#xd;
+&quot;resultMsg&quot;:&quot;成功&quot;,&#xd;
+&quot;thirdPaySerNum&quot;:&quot;${thirdPaySerNum}&quot;,&#xd;
+&quot;trantype&quot;:&quot;${trantype}&quot;,&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款结果查询（busNumber)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_transsearch}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;busNumber&quot;: &quot;${busNumber}&quot;,&#xd;
+&quot;busType&quot;: &quot;${busType_repayapply}&quot;,}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款结果查询（orderNo)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;${txncd_transsearch}&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;ordrNo&quot;: &quot;${seriNo}&quot;,&#xd;
+&quot;busType&quot;: &quot;${busType_repayapply}&quot;,}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF8</stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP请求" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+&quot;comm&quot;: {&#xd;
+&quot;encrmd&quot;: &quot;01&quot;,&#xd;
+&quot;invktm&quot;: &quot;${__time(yyyyMMdd HH:mm:ss)}&quot;,&#xd;
+&quot;version&quot;:&quot;${version}&quot;,&#xd;
+&quot;needret&quot;:&quot;${needret}&quot;,&#xd;
+&quot;signtp&quot;: &quot;001&quot;,&#xd;
+&quot;signtx&quot;: &quot;&quot;,&#xd;
+&quot;chanltp&quot;: &quot;C-00&quot;,&#xd;
+&quot;chanlno&quot;: &quot;0101020006&quot;,&#xd;
+&quot;ordrno&quot;: &quot;${__time()}&quot;,&#xd;
+&quot;txncd&quot;: &quot;&quot;,&#xd;
+&quot;encodg&quot;: &quot;utf-8&quot;&#xd;
+},&#xd;
+&quot;data&quot;: {&#xd;
+&quot;prodSubNo&quot;: &quot;${prodSubNo}&quot;,&#xd;
+&quot;mercNo&quot;: &quot;${mercNo}&quot;,&#xd;
+&quot;mercName&quot;: &quot;${mercName}&quot;,&#xd;
+}&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/${path}/${channel}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
