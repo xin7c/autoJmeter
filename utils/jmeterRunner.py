@@ -39,7 +39,9 @@ class Action(object):
 
     @staticmethod
     def d_var(vars):
-        """D参数生成"""
+        """
+            @D参数生成
+        """
         _d_var = ""
         for i in vars:
             _d_var += (" -D" + i)
@@ -51,7 +53,7 @@ class Action(object):
         return lt
 
     def make_cmd(self, var, *args):
-        """命令行生成"""
+        """生成命令行参数"""
         if var == 0:
             cmd = "%s -n -t %s -l %s %s" % (args[0], args[1], args[2], "")
             return cmd

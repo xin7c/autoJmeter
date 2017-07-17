@@ -16,5 +16,7 @@ data = {
 jmeter_path = "sh /Users/xuchu/xctools/apache-jmeter-3.2/bin/jmeter"
 jmx_path = "/Users/xuchu/xcpy/bsbApi/autoJmeter/jmxs/"
 jmeter_log = "/Users/xuchu/xcpy/bsbApi/autoJmeter/logs/%s.csv"
-j_Vars = ["count=11111", "data1=22222", "loopV1=v1", "loopV2=v2"]
+# 用户参数
+j_Vars = ["count=101010", "data1=22222", "loopV1=v1", "loopV2=v2"]
+# 系统参数
 d_Vars = ["url=10.1.2.231"]

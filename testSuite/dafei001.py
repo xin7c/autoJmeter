@@ -17,5 +17,5 @@ dafei001 = Action()
 dafei001.runJmeter(jmx_path=dafei001.jmx("dafei001.jmx"),
                 var=dafei001.j_var(cg.j_Vars))
 
-dafei001.runJmeter(jmx_path=dafei001.jmx("dafei001.jmx"),
+dafei001.runJmeter(jmx_path=dafei001.jmx("dafei002.jmx"),
                 var=dafei001.j_var(cg.j_Vars))
