@@ -1,0 +1,3 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1500281102223,96,HTTP请求01,200,OK,线程组 1-1,text,true,,210,242,1,1,95,0,75
+1500281104368,64,HTTP请求01,200,OK,线程组 1-1,text,true,,210,242,1,1,62,0,46
